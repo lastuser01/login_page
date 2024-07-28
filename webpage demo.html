@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpage demo</title>
+    <link rel="icon" href="4.jpg" type="image/x-icon" border-radius:50% />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      body {
+        background-image: url(4.jpg);
+        background-size: cover;
+        background-repeat: no repeat;
+      }
+
+      .contsainer {
+        height: "100vh";
+        width: 100%;
+      }
+
+      .navbar {
+        height: 25px;
+        width: 100%;
+        color: #4dffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: rgba(1, 1, 1, 0.5);
+        backdrop-filter: blur(10px);
+      }
+
+      a {
+        color: #4dffff;
+        text-decoration: none;
+      }
+
+      .table {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-top: 100px;
+        flex-direction: column;
+
+        width: 400px;
+        height: 400px;
+        background-color: hsla(f, f, f, 0.001);
+        backdrop-filter: blur(16px);
+        border: 1px solid #4dffff;
+        border-radius: 10px;
+        background: none;
+      }
+
+      input {
+        padding-left: 30px;
+        position: relative;
+        width: 300px;
+        height: 45px;
+        border: 1px solid #4dffff;
+        border-radius: 30px;
+        background-color: transparent;
+        box-sizing: border-box;
+      }
+
+      input:focus::placeholder {
+        color: transparent;
+        transition: all 0.5s;
+        transition-timing-function: linear;
+      }
+
+      .pl::placeholder {
+        color: white;
+        position: absolute;
+        font-size: 15px;
+      }
+
+      input:focus {
+        border: 1px solid #4dffff;
+        color: white;
+        outline: none;
+      }
+
+      input:active {
+        background-color: rgba(3, 3, 3, 0.3);
+        color: white;
+        transition: background 0.5s linear 0s;
+      }
+
+      .login__button {
+        width: 300px;
+        color: #4dffff;
+        height: 45px;
+        background-color: transparent;
+        border-radius: 30px;
+        border: 1px solid #4dffff;
+        transition-property: background-color;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-in;
+      }
+
+      .login__button:hover {
+        cursor: pointer;
+        background-color: #4dffff;
+        color: white;
+        scale: 1.005;
+      }
+
+      .div2 {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+      }
+
+      .div2 i {
+        position: absolute;
+        color: #4dffff;
+        padding: 15px;
+        margin-left: 250px;
+      }
+
+      a:hover {
+        color: #4dffff;
+      }
+
+      .login {
+        background-image: linear-gradient(to right, white, black);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 55px;
+      }
+
+      .txt {
+        color: gray;
+        padding: 5px;
+      }
+
+      .txt_2 {
+        color: gray;
+        padding: 0 5px;
+      }
+
+      .checkbox {
+        height: 15px;
+        width: 15px;
+      }
+
+      .div3 {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+      }
+
+      .txt_1 {
+        margin-left: 70px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contsainer">
+      <nav class="navbar">
+        <a href=""> HOME</a>
+        <a href=""> SERVICE</a>
+        <a href=""> SOURCE CODE</a>
+        <a href=""> ABOUT US</a>
+        <a href=""> CONTACT US</a>
+      </nav>
+
+      <form action="" class="form">
+        <div class="table">
+          <h1 class="login">Login</h1>
+
+          <div class="div2">
+            <input class="pl" type="text" placeholder="username" required />
+            <i class="ri-at-line"></i>
+          </div>
+          <div class="div2">
+            <input
+              class="pl"
+              type="password"
+              placeholder="password"
+              name="enter password"
+              required
+            />
+            <i class="ri-lock-2-fill"></i>
+          </div>
+
+          <div class="div3">
+            <input type="checkbox" class="checkbox" />
+            <span class="txt_2">Remember me</span>
+            <a href="#" class="txt_1">forgot password</a>
+          </div>
+
+          <button type="submit" class="login__button">Login</button>
+          <div class="txt">Dont have an accout ? <a href="#">register</a></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
